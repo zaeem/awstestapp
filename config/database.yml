@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  host: localhost
+  password: postgres1
+  pool: 5
+
+development:
+  <<: *default
+  database: nutelx_development
+
+test:
+  <<: *default
+  database: nutelx_test
+
+production:
+  <<: *default
+  database: nutelx_development

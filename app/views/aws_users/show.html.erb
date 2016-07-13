@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @aws_user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @aws_user.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @aws_user.email %>
+</p>
+
+<%= link_to 'Edit', edit_aws_user_path(@aws_user) %> |
+<%= link_to 'Back', aws_users_path %>
